@@ -35,7 +35,7 @@ static NSTimer *timer_;
     window_ = [[UIWindow alloc] init];
     window_.windowLevel = UIWindowLevelAlert;
     window_.backgroundColor = [UIColor blackColor];
-     window_.frame = frame;
+    window_.frame = frame;
     window_.hidden = NO;
     
     // 动画
@@ -65,7 +65,6 @@ static NSTimer *timer_;
         button.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
         [button setImage:image forState:UIControlStateNormal];
     }
-    
     button.frame = window_.bounds;
     [window_ addSubview:button];
     
@@ -144,13 +143,5 @@ static NSTimer *timer_;
         timer_ = nil;
     }];
 }
-
-
-
-
-
-
-
-
 
 @end
